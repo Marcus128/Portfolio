@@ -1,0 +1,76 @@
+body{
+	background-color : rgb(51%,58%,59%);	
+}
+
+header{
+	display : flex;
+	border-bottom : 2px solid black ;
+}
+
+#menu_bouton{
+	/*background-color : #fc9;*/
+	padding-left : 50em;
+	padding-bottom: 1em;
+	padding-top: 1em;
+}
+
+#menu_bouton > a {
+	padding-left : 1em;
+}
+
+#menu_bouton > a:hover{
+	/*background-color: #fc9;*/
+	/*color : #fc9;*/
+	color : rgba(255,255,255,.59);
+}
+
+header > #contact{
+	display : flex;
+}
+
+#_linkedIn{
+	padding-left: 1em;	
+	padding-top: 10px;
+}
+
+#_itchio{
+	padding-left: 1em;	
+	padding-top: 10px;
+}
+
+#contact_old{
+	padding-top : 7em;
+	/*Centre l'élément lui-meme dans son conteneur*/
+	width: 200px;
+	margin: 0 auto;
+	padding-left: 0;
+}
+
+#mail_img{
+	display: flex; 	/*Permet d'aligner les éléments enfants (les <p>) en ligne*/
+	/*gap : em;*/		/*Ajoute un espace entre les deux paragraphes.*/
+	padding-right: 3em;
+
+}
+
+#_linkedIn{
+	display: flex; 	/*Permet d'aligner les éléments enfants (les <p>) en ligne*/
+	/*gap : em;*/		/*Ajoute un espace entre les deux paragraphes.*/
+
+}
+
+#_itchio{
+	display: flex; 	/*Permet d'aligner les éléments enfants (les <p>) en ligne*/
+	/*gap : em;*/		/*Ajoute un espace entre les deux paragraphes.*/
+
+}
+
+footer{
+	display: flex; 	/*Permet d'aligner les éléments enfants (les <p>) en ligne*/
+	gap : 54em;		/*Ajoute un espace entre les deux paragraphes.*/
+	padding-top : 5em;
+}
+
+footer > #mail{
+	display: flex;
+}

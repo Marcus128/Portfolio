@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang = "fr">
+	<head>
+		<meta charset = "utf-8">
+		<meta name = "description" content = "Portfolio de Marcus Labady" >
+		<meta name = "keywords" content = "Marcus Labady portfolio">
+		<meta name = "author" content = "Marcus Labady">
+		<title>Marcus Labady - Portfolio</title>
+		<link rel = "stylesheet" type = "text/css" media = "screen" href = "css/portfolio.css">
+	</head>
+
+	<body>
+		<header>
+			<div id ="logoAccueil">
+				<!--Importe l'image-->
+				<img src = "media/images/logoAccueil_2-removebg.png" width = "70" height = "70" alt = "logo Accueil" usemap = "#accueil_image">
+				<!--Rend l'image cliquable -->
+				<map name ="accueil_image">
+					<area shape = "rect" coords="0,0,80,80" href = "index.html" title = "Accueil" alt ="accueil">
+				</map>
+			</div>
+
+			<div id="headerRightSide">
+				<div id = "menu_bouton">
+					<a href = "index.html">À propos de moi</a>
+					<a href = "resume.html">Mon CV</a>
+					<!--<a href = "english/...html">AboutMe</a>-->
+				</div>
+
+				<div id = "contact">
+					<div id="_linkedIn">
+						<img src = "media/images/linkedinLogo.png" width = "35" height = "35" alt = "linkedin logo" usemap = "#linkedin">
+
+						<map name = "linkedin">
+							<area shape="rect" coords = "0,0,35,35" href="https://www.linkedin.com/in/marcus-melvin-labady-6a48b8258" target = "_blank" title="LikedIn profile" alt = "linkedin profile">
+						</map>
+					</div>
+					<div id = "_itchio">
+						<img src = "media/images/itchioLogo.png" width = "35" height = "35" alt = "icth.io logo" usemap = "#itchio">
+
+						<map name = "itchio">
+							<area shape="rect" coords = "0,0,35,35" href="https://itch.io/profile/redhawk128" target = "_blank" title="itch.io profile" alt = "itch.io profile">
+						</map>
+					</div>
+				</div>
+
+				<div id ="langage_eng">
+					<img src = "media/images/drapeauAnglais-removebg.png" width = "40" height = "40" alt = "icth.io logo" usemap = "#img_lang">
+						<!--<a href = "https://itch.io/profile/redhawk128" target = "blank">itch.io</a>-->
+						<!--<p>itchio</p>-->
+
+					<map name = "img_lang">
+						<area shape="rect" coords = "0,0,40,40" href="english/portfolio.html" title="English" alt = "page not implemented yet">
+					</map>
+				</div>
+			</div>
+		</header>
+
+		<h1>Projets Réalisés</h1>
+		<div id ="paragraph">
+			<p>Ici la liste des projet réalisés ansi que leur descriptions</p>
+		</div>
+
+		<div id = "AllProject">
+			<section id = "volcan">
+				<video id = "volcan_video" width ="380" height = "340" controls>
+					<source src ="media/video/VolcanShader_Movie_001.mp4" type ="video/mp4" alt ="Votre navigateur ne prend pas en charge le format vidéo mp4.">
+				</video>
+
+				<div class = "right">
+					<p class ="title">Volcano Shader<p>
+					<p>Manipulation de Shaders pour animer la lave du volcan, la mer autour<br>ainsi que le foam de celle-ci, et les nuages.
+					</p>
+					<p class="detail">
+						Fait avec le Shader Graph d'Unity
+					</p>
+				</div>
+			</section>
+
+			<section id = "time_trial_spaceship">
+				<div class = "left">
+					<p class ="title">Time Trial Spaceship<p>
+					<p>Prototype de jeu de course contre la montre, avec vaisseau<br>spatiale et obstacle sur le chemin, comprenant un niveau.<br>Disponible en téléchargement <a href = "https://itch.io/profile/redhawk128">ici.</a> 
+					</p>
+					<p class="detail">
+						Fait en C# avec Unity.
+					</p>
+				</div>
+
+				<video id = "time_trial_spaceship_video" width ="380" height = "340" controls>
+					<source src ="media/video/TTS_Movie_007.mp4" type ="video/mp4" alt ="Votre navigateur ne prend pas en charge le format vidéo mp4.">
+				</video>
+			</section>
+
+			<section id = "pong">
+				<video id = "pong_video" width ="380" height = "340" controls>
+					<source src ="media/video/PongMovie_024.mp4" type ="video/mp4" alt ="Votre navigateur ne prend pas en charge le format vidéo mp4.">
+				</video>
+
+				<div class = "right">
+					<p class ="title">Pong IA<p>
+					<p>Jeu de pong réalisé en implementant le concept du réseau de<br>neuronne pour l'intelligence artificielle.
+					</p>
+					<p class="detail">
+						Fait en C# avec Unity.
+					</p>
+				</div>
+			</section>
+
+			<section id = "gen_proc">
+				<div class = "left">
+					<p class ="title">Terrains<p>
+					<p>Compilation de différente méthodes de génération procédurale<br> de terrain.
+					</p>
+					<p class="detail">
+						Fait en C# avec Unity.
+					</p>
+				</div>
+
+				<video id = "gen_proc_video" width ="380" height = "340" controls>
+					<source src ="media/video/GenProc_Movie_004.mp4" type ="video/mp4" alt ="Votre navigateur ne prend pas en charge le format vidéo mp4.">
+				</video>
+			</section>
+
+			<section id = "rocket_lag">
+				<video id = "rocket_lag_video" width ="380" height = "340" controls>
+					<source src ="media/video/RocketLag Preview - Unity 2022.3.14f1 _DX11_ 2024-03-13 14-19-47.mp4" type ="video/mp4" alt ="Votre navigateur ne prend pas en charge le format vidéo mp4.">
+				</video>
+
+				<div class = "right">
+					<p class ="title">RocketLag<p>
+					<p>Prototype de jeu de type RocketLeague jouable<br>avec deux joueurs en écran partagé.
+					</p>
+					<p class="detail">
+						Fait en C# avec Unity.
+					</p>
+				</div>
+
+			</section>
+		</div>
+
+		<footer >
+			<p id = "author">author : Marcus Labady</p>
+			<div id = "mail">
+				<img src = "media/images/mailLogo-removebg.png" width = "60" height = "60" alt = "mail link">
+				<p>mlabady@gaming.tech</p>
+			</div>
+		</footer>
+		
+	</body>
+
+</html>

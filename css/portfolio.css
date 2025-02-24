@@ -1,0 +1,153 @@
+html, body {
+	overflow: visible !important;
+    height: auto;
+}
+
+body{
+	padding-top: 80px; /* Ajuste selon la hauteur du header */
+	background-color : rgb(51%,58%,59%);
+}
+
+header{
+	display : flex;	/*affiche en ligne les enfants du header*/
+	border-bottom : 2px solid black ;
+
+	position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgb(51%,58%,59%);
+    z-index: 9999;	
+}
+
+/*Coin haut-gauche*/
+#logoAcceuil{
+	position: fixed;
+	top: 10px; /* Distance du haut */
+	left: 10px; /* Distance de la gauche */
+	background-color: lightblue;
+	padding: 10px;
+	border-radius: 5px;
+
+	 z-index: 9999; /* Met les éléments au premier plan */
+}
+
+/*----Coin haut-droite----*/
+#headerRightSide{
+	position: fixed;
+	top: 10px;
+	right: 10px;
+	padding: 10px;
+	border-radius: 5px;
+	display : flex;
+}
+
+#menu_bouton{
+	padding-left : 10em;
+	padding-bottom: 1em;
+	padding-top: 1em;
+}
+
+#menu_bouton > a {
+	padding-left : 1em;
+}
+
+#menu_bouton > a:hover{
+	color : rgba(255,255,255,.59);
+}
+
+#contact{
+	display : flex;
+	padding-top: 5px;
+}
+
+#_linkedIn{
+	padding-left: 1em;	
+	padding-bottom : 3em;
+}
+
+#_itchio{
+	padding-left: 1em;	
+	padding-bottom : 3em;
+}
+
+#langage_eng{
+	padding-left: 1em;	
+	padding-top: 2px;
+	padding-bottom : 3em;
+}
+
+h1{
+	margin-left: 15em;
+}
+
+#paragraph{
+	padding-left : 7em;
+	margin-bottom: 0px;
+	/*margin-bottom: 5px;*/
+}
+
+#paragraph{
+	margin-right: 4em;
+}
+
+#AllProject, #paragraph{
+	margin-top: 3em;
+	margin-left: 25%;
+
+}
+
+
+#AllProject > * {
+	margin-bottom: 3em;
+}
+
+section{
+	display: flex;
+}
+
+.right, .left{
+	margin-top: 4em;
+}
+
+.left{
+	margin-right: 2em;
+}
+
+.right{
+	margin-left: 2em;
+}
+
+/*reduire l'espace entre les <p>*/
+.right > *, .left > *{
+	margin-top: 5px;
+	margin-bottom: 5px;
+}
+
+
+.title{
+	font-size: 28px;
+	font-weight: bold;
+}
+
+.detail{
+
+	font-weight: bold;
+}
+
+footer {
+	display: flex;
+	border-top: 2px solid black ;
+	margin-top: 5em;
+	/*background-color: rgba(51,58,65,.70);
+	color : rgba(255,255,255,.69);*/
+}
+
+#author{
+	 white-space: nowrap; /* Empêche le texte de passer à la ligne */
+}
+
+footer > #mail{
+	display: flex;
+	margin-left: auto;
+}

@@ -1,0 +1,186 @@
+un mix des portfolio 
+https://scheefer.me/#/resume
+https://lucarickler.github.io/portfolio/contacts
+https://www.charutak.xyz/work
+https://joeydevries.com/#portfolio
+
+->Corriger le zoom/dezoom pour que tout le contenu de la page reste au centre
+
+-Fond bleu cassé ou gris clair
+-ligne de boutons situé en haut à gauche
+-Boutons : 
+	About me : du texte racontant mon parcours etudiant et mes choix en informatique /description de moi
+	Portfolio : des video + description des projets choisi
+					(nom+description, type de jeux, role, tools used, plateform)
+					--> dispositin : https://joeydevries.com/#portfolio + celui dans le canva
+	Contact : petit texte d'accueil + mail, linkedin, itch.io...
+	Resume :
+	English/Francais :
+-Footer : auteur du site + mail
+
+Rappel html,css,javascript :
+
+--> Un langage à base de balises.
+	HTML repose sur la notion de balises (tags),deux types de balises :
+	
+	1 Les balises qui sont ouvertes puis fermées, et encadrent du contenu
+	Exemple : <em>Un peu d'italique</em>
+	
+	2 Les balises qui s’ouvrent et se ferment en même temps
+	Exemple : <img src="mon_image.png">
+
+		<h1 > Un exemple de titre </h1 >
+ 		<hr >
+ 		<div >
+ 		<p>
+ 			Du texte <b> gras </b> , puis <em > italique </em > ,
+ 			puis <b> <em > gras et italique </em > </b>.
+ 		</p>
+ 		<img src=" mon_image .png" alt="Une image " >
+ 		</ div >
+
+--> Certaines balises peuvent posséder des attributs.
+	Exemples :
+		<meta charset ="utf -8" >
+		<img src=" mon_image .png" alt="Une image " >
+		<p style ="text - align : right ">
+ 			Du texte align é à droite
+ 		</p>
+
+--> Balises et hiérarchie
+	Les balises sont structurées de façon hiérarchique
+	Chaque balise hérite des propriétés de la balise de niveau supérieur — à moins
+	qu’elles ne les redéfinissent.
+
+		<p> Ce texte est <b> seulement en gras </b>. </p>
+		<p> Ce texte est <b> seulement en gras <i> et
+		cette partie est en gras et en italique </i> </b>. </p>
+		
+	/!\ Ordre de fermeture /!\
+		Il est impératif de fermer les balises dans l’ordre inverse duquel on les a ouvertes.
+
+--> Commentaires
+	<! -- Texte entre commentaires -->
+	
+	/!\ Les commentaires restent visibles dans la source de la page Web, qui est
+		accessible depuis le client.
+
+	<br> <=> "\n" et pas besoin de fermer cette balise
+	&lt; <=> '<' 
+	&gt; <=> '>' 
+	&amp; <=> '&'
+
+
+--> Structuration d’un document HTML
+	Deux grandes parties :
+	En-tête : définition du titre, du codage, des mots-clés, etc.
+			  -> Information destinée aux machines (navigateur, robots, etc.)
+	Corps : contenu de la page Web
+			-> Information destinée à l’humain (et aux machines)
+
+ 	<! DOCTYPE html >
+ 	<html lang ="fr">
+ 		<head >
+ 			<! -- Ici , l'en -tête -->
+ 		</ head >
+
+ 		<body >
+ 			<! -- Ici , le corps de la page -->
+ 		</ body >
+ 	</ html >
+
+ 	Un exemple minimal (syntaxe conforme à HTML5)
+		 <! DOCTYPE html >
+		 <html lang ="fr">
+		 	<head >
+		 		<meta charset ="utf -8" >
+		 		<title > Le titre de mon document </ title >
+		 	</ head >
+
+		 	<body >
+		 		<p> Ce document est constitu é d ' une seule phrase . </p>
+		 	</ body >
+
+		 </ html >
+
+
+<! DOCTYPE html > := Il s’agit de la définition du type du document (DTD, Document Type Definition), qui
+					 décrit un modèle de document XML ou SGML.Un document conforme à la syntaxe de HTML5 commence nécessairement par ça
+
+<title >...</title> := Située dans l’en-tête du document, entre les balises <head> et </head>,
+            		   seule balise obligatoire de l’en-tête. Il definit le titre du document.
+
+<meta> := Situées dans l’en-tête du document entre les balises <head> et </head>
+		  Ordre non spécifié : permettent de donner des informations au navigateur et aux moteurs de
+							   recherche, codage des caractères, auteur, description, mots-clés de la page.
+		  Ne s’affichent jamais directement sur la page
+
+		  1 <meta charset =" NOM_DU_CODAGE " > -> UTF-8 recommandé, https://www.iana.org/assignments/character-sets/character-sets.xhtml pour voir les codage possibles
+
+		  2 <meta name = "description" content ="Introduction au développement Web" >
+		  3 <meta name =" keywords " content ="cours ,HTML , Institut Galilée, Web" >
+          4 <meta name =" author " content ="Le prof " >
+          -> pour les 3 dernier, remplir ces champs est important, pour le référencement par les moteurs de recherche.
+
+--> Bonnes pratiques
+	Il est très fortement conseillé de toujours spécifier au minimum, en plus de la balise <title> :
+		le codage des caractères,
+		l’auteur
+		la description
+		les mots-clés.
+
+-->Sections
+   <div>...</div> := élément structurel (ou section)	
+   Il est d’usage d’organiser la page Web en <div> imbriquées.
+	<div >
+ 		<div >
+			<! -- Premier cours : réseaux -->
+		</ div >
+		<div >
+			<! -- Deuxi ème cours : programmation Web -->
+		</ div >
+	</ div >
+
+	Il est d’usage de créer un second paragraphe (<p>) plutôt qu’un saut de ligne (<br>).
+	<div >
+		<p> Un premier paragraphe . </p>
+		<p> Un second paragraphe . </p>
+	</ div >
+
+	<h(i)>..</h(i)> := titre de i-eme niveau (1<=i<=6), h1,h2..h6
+
+
+--> Lien HyperText:
+ 	Externe : 
+ 		<a href="LA_CIBLE_DU_LIEN">Le texte à afficher</a>
+ 		-> Relatif :
+ 				<a href =" index.html "> Texte </a> Pointe sur la page index.html dans le répertoire 		   							      courant (côté serveur)
+ 		-> Absolue :
+ 				<a href =" https://www.univ-paris13.fr/"> USPN </a>, pour pointer vers un autre sites
+
+	Interne : 							
+		On peut effectuer un lien vers une autre partie du même document.
+		Syntaxe pour définir l’endroit dans le document (destination) : 
+			-> À l’aide de id
+			-> Exemple : <h2 id="macible">Mes films préférés</h2> //definition de l'endroit dans le 															document
+		Syntaxe pour définir le lien
+			<a href="#macible">Remonter aux films préférés</a> //pointe vers l'endroit defini
+
+-->Afficher du texte par dessus en hover
+	Syntaxe :
+		Balise <abbr>...</abbr>
+		Utilisée avec un title="..."
+		Exemple:
+			J'aime le <abbr title =" HyperText Markup Language "> HTML </ abbr >.
+
+--> Liste a puces, énumération & tableaux : a voir 
+
+--> Media
+
+-->Formulaire : a voir
+
+--> DOM : Document Object Model 
+	Chaque balise ainsi que ces composant sont des noeuds objets
+
+
+

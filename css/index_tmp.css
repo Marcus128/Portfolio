@@ -1,0 +1,58 @@
+  /* Coin haut-gauche */
+        .top-left {
+            position: fixed;
+            top: 10px; /* Distance du haut */
+            left: 10px; /* Distance de la gauche */
+            background-color: lightblue;
+            padding: 10px;
+            border-radius: 5px;
+        }
+
+        /* Coin haut-droite */
+        .top-right {
+            position: fixed;
+            top: 10px;
+            right: 10px;
+            background-color: lightcoral;
+            padding: 10px;
+            border-radius: 5px;
+        }
+
+        /* Coin bas-gauche */
+        .bottom-left {
+            position: fixed;
+            bottom: 10px;
+            left: 10px;
+            background-color: lightgreen;
+            padding: 10px;
+            border-radius: 5px;
+        }
+
+        /* Coin bas-droite */
+        .bottom-right {
+            position: fixed;
+            bottom: 10px;
+            right: 10px;
+            background-color: lightyellow;
+            padding: 10px;
+            border-radius: 5px;
+        }
+
+        /* Centre de l'écran */
+        .center0 {
+            position: fixed;
+            top: 50%; /* Centre vertical */
+            left: 50%; /* Centre horizontal */
+            transform: translate(-50%, -50%); /* Décale de la moitié de la largeur/hauteur */
+            background-color: lightgray;
+            padding: 20px;
+            border-radius: 10px;
+            text-align: center;
+        }
+/*
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            height: 100vh;
+        }
+*/
