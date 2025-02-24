@@ -1,3 +1,5 @@
+--> Passer au developpement web pour du mobile
+
 un mix des portfolio 
 https://scheefer.me/#/resume
 https://lucarickler.github.io/portfolio/contacts
