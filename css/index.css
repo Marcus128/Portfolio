@@ -123,12 +123,19 @@ footer > #mail{
 /*pour que cela n'affecte que les ecran ou taille maximale est de 480px (smarphone en gros)
   ou entre 481 et 1024 (ecran tablette)*/
 @media only screen and (max-width:480px), (min-width:481px) and (max-width:1024px){
-	body{
+	html{
 		background-color : lightcyan /*!important*/;
 	}
 
+	/* Centre de l'écran */
 	main{
-		margin: center;
-		margin-top: 4em;
+		position: fixed;
+	    top: 50%; /* Centre vertical */
+        left: 50%; /* Centre horizontal */
+		transform: translate(-50%, -50%); /* Décale de la moitié de la largeur/hauteur */
+	    /*background-color: lightgray;*/
+		padding: 20px;
+   	    border-radius: 10px;
+        text-align: center;
 	}	
 }
