@@ -104,3 +104,14 @@ footer > #mail{
 	margin-left: auto;
 	 padding-right: 1em;
 }
+
+
+@media only screen and (max-width:480px), (min-width:481px) and (max-width:1024px){
+	body{
+		background-color : lightcyan /*!important*/;
+	}
+
+	main{
+		margin: center;
+		margin-top: 4em;
+	}	

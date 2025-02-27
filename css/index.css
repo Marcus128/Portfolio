@@ -10,14 +10,6 @@ body{
 	background-color : rgb(51%,58%,59%);
 }
 
-/*pour que cela n'affecte que les ecran ou taille maximale est de 480px (smarphone en gros)
-  ou entre 481 et 1024 (ecran tablette)*/
-@media only screen and (max-width:480px), (min-width:481px) and (max-width:1024px){
-	body{
-		background-color : lightcyan /*!important*/;
-	}	
-}
-
 header{
 	display : flex;	/*affiche en ligne les enfants du header*/
 	border-bottom : 2px solid black ;
@@ -124,5 +116,19 @@ footer{
 footer > #mail{
 	display: flex;
 	margin-left: auto;
-	 padding-right: 1em;
+	padding-right: 1em;
+}
+
+
+/*pour que cela n'affecte que les ecran ou taille maximale est de 480px (smarphone en gros)
+  ou entre 481 et 1024 (ecran tablette)*/
+@media only screen and (max-width:480px), (min-width:481px) and (max-width:1024px){
+	body{
+		background-color : lightcyan /*!important*/;
+	}
+
+	main{
+		margin: center;
+		margin-top: 4em;
+	}	
 }

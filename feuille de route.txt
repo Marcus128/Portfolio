@@ -1,4 +1,5 @@
 --> Passer au developpement web pour du mobile
+	--> mettre une version du CV en anglais
 
 un mix des portfolio 
 https://scheefer.me/#/resume
