@@ -155,11 +155,11 @@ footer > #mail{
 
 
 @media only screen and (max-width:480px), (min-width:481px) and (max-width:1024px){
-	html{
+	body{
 		background-color : lightcyan /*!important*/;
 	}
 
 	main{
-		margin: center;
+		margin-left: ;
 		margin-top: 4em;
 	}	

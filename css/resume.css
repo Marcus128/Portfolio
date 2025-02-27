@@ -107,7 +107,7 @@ footer > #mail{
 
 
 @media only screen and (max-width:480px), (min-width:481px) and (max-width:1024px){
-	html{
+	body{
 		background-color : lightcyan /*!important*/;
 	}
 
