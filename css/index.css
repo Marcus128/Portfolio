@@ -124,7 +124,15 @@ footer > #mail{
   ou entre 481 et 1024 (ecran tablette)*/
 @media only screen and (max-width:480px), (min-width:481px) and (max-width:1024px){
 	body{
-		background-color : lightcyan /*!important*/;
+		/*background-color : darkcyan;*/ /*!important*/;
+	}
+
+	h1{
+		
+	}
+
+	#presentation{
+		text-align : justify-all;
 	}
 
 }
