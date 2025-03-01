@@ -136,11 +136,13 @@ footer > #mail{
 	}
 
 	main{
+		min-height: 70vh; /*occupe au moin 7O% de l'ecran*/
 		margin-bottom: 5em;
 	}
 
 	footer{
-		border-top: 4em;
+		margin-top: 4em;
+		position: relative;
 	}
 
 }
