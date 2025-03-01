@@ -25,6 +25,7 @@ header{
 /*Coin haut-gauche*/
 #logoAcceuil{
 	position: fixed;
+	/*position: fixed; a décommenter pour plus tard*/
 	top: 10px; /* Distance du haut */
 	left: 10px; /* Distance de la gauche */
 	background-color: lightblue;
@@ -37,6 +38,8 @@ header{
 /*----Coin haut-droite----*/
 #headerRightSide{
 	position: fixed;
+	/*position: fixed; a décommenter pour plus tard*/
+	
 	top: 10px;
 	right: 10px;
 	padding: 10px;
@@ -138,12 +141,14 @@ footer > #mail{
 		/*background-color : darkcyan;*/ /*!important*/;
 	}
 
+	 header {
+        position: relative; /* Utiliser relative pour ne pas le fixer au top */
+        padding: 10px;
+        z-index: 10;
+    }
+
 	#menu_bouton{
 		display: flex;
-	}
-
-	#menu_bouton:nth-child(1){
-		padding-left: 2em;
 	}
 
 	main{
@@ -165,6 +170,7 @@ footer > #mail{
 	}
 
 	footer{
+		position : relative;
     	width: 100%;
     	display: flex;
 		border-top: 2px solid black ;
