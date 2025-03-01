@@ -128,11 +128,19 @@ footer > #mail{
 	}
 
 	h1{
-		
+
 	}
 
 	#presentation{
 		text-align : justify-all;
+	}
+
+	main{
+		margin-bottom: 5em;
+	}
+
+	footer{
+		border-top: 4em;
 	}
 
 }
