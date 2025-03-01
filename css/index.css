@@ -122,7 +122,8 @@ main {
 */
 
 footer {
-    width: 100%;display: flex;
+    width: 100%;
+    display: flex;
 	border-top: 2px solid black ;
 	margin-top: 5em;
     box-sizing: border-box;
@@ -171,9 +172,14 @@ footer > #mail{
 		min-height: 70vh; /*occupe au moin 7O% de l'ecran*/
 		margin-bottom: 5em;
 	}
-/*
+
 	footer{
-		margin-top: 4em;
-		position: relative;
-	}*/
+    	width: 100%;
+    	display: flex;
+		border-top: 2px solid black ;
+		margin-top: 5em;
+   		box-sizing: border-box;
+    	position: relative;
+    	bottom: 0;
+	}
 }
