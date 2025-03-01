@@ -128,12 +128,19 @@ footer > #mail{
 		/*background-color : darkcyan;*/ /*!important*/;
 	}
 
+	#menu_bouton{
+		display: flex;
+	}
+
+	
+
 	h1{
-		padding-right: 4em;
+		padding-right: 7em;
 	}
 
 	#presentation{
 		text-align : justify-all;
+		position: relative;
 	}
 
 	main{
