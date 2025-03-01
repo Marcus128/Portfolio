@@ -150,6 +150,7 @@ footer {
 footer > #mail{
 	display: flex;
 	margin-left: auto;
+	padding-right: 1em;
 }
 
 
