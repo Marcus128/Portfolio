@@ -127,15 +127,4 @@ footer > #mail{
 		background-color : lightcyan /*!important*/;
 	}
 
-	/* Centre de l'écran */
-	main{
-		position: fixed;
-	    top: 50%; /* Centre vertical */
-        left: 50%; /* Centre horizontal */
-		transform: translate(-50%, -50%); /* Décale de la moitié de la largeur/hauteur */
-	    /*background-color: lightgray;*/
-		padding: 20px;
-   	    border-radius: 10px;
-        /*text-align: center;*/
-	}	
 }
