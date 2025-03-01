@@ -149,10 +149,6 @@ footer > #mail{
 		margin-top: 5em ;
 	}
 
-	#h1{
-		padding-right: 50%;
-	}
-
 	#presentation{
 		text-align : justify-all;
 		position: relative;
@@ -164,7 +160,7 @@ footer > #mail{
 	}
 
 	footer{
-		position : relative;
+		/*position : relative;*/
     	width: 100%;
     	display: flex;
 		border-top: 2px solid black ;
