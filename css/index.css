@@ -135,8 +135,9 @@ footer {
 	white-space: nowrap; /* Empêche le texte de passer à la ligne */
 	padding-left: 1em;
 
+	/**/
     overflow: hidden;
-    text-overflow: ellipsis; /* Ajoute "..." si le texte dépasse */
+    text-overflow: ellipsis ; /* Ajoute "..." si le texte dépasse */
     max-width: 100%; /* Empêche qu'il dépasse la largeur du footer */
 }
 
@@ -144,7 +145,7 @@ footer > #mail{
 	display: flex;
 	margin-left: auto;
 	padding-right: 1em;
-	
+
 	/*width: 100%;
     box-sizing: border-box;*/ /* S'assure que le padding ne dépasse pas */
 }
@@ -187,6 +188,5 @@ footer > #mail{
    		box-sizing: border-box;
     	position: relative;
     	bottom: 0;
-    	background-color: red;
 	}
 }
