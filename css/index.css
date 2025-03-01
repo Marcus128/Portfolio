@@ -88,18 +88,7 @@ main {
 
 
 #presentation > h1{
-	/*background-color: Red;*/
-	/*padding-left : 8em;*/
 	text-align: center; /* Centre le texte à l'intérieur */
-}
-
-
-
-#h1_{
-	text-align: center; /* Centre le texte */
-    display: block; /* Assure que le h1 occupe toute la largeur */
-    margin: 0 auto; /* Centre le bloc si nécessaire */
-    width: fit-content; /* Ajuste la largeur au texte */
 }
 
 #presentation{
@@ -110,16 +99,7 @@ main {
 	transform: translate(-50%, -50%); /* Décale de la moitié de la largeur/hauteur */
 	padding: 20px;
 	border-radius: 10px;
-/*	font-size : 20px;	*/	
 }
-
-
-/*footer{
-	display: flex;
-	border-top: 2px solid black ;
-	margin-top: 5em;
-}
-*/
 
 footer {
     width: 100%;
@@ -160,6 +140,10 @@ footer > #mail{
 
 	#menu_bouton{
 		display: flex;
+	}
+
+	#menu_bouton:nth-child(1){
+		padding-left: 2em;
 	}
 
 	main{
