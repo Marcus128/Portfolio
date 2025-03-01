@@ -115,7 +115,9 @@ footer{
 
 footer > #mail{
 	display: flex;
-	margin-left: auto;
+	padding-left: auto;
+	width: 100%;
+    box-sizing: border-box; /* S'assure que le padding ne dépasse pas */
 }
 
 
@@ -127,7 +129,7 @@ footer > #mail{
 	}
 
 	h1{
-
+		padding-right: 4em;
 	}
 
 	#presentation{
