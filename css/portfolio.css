@@ -85,6 +85,8 @@ h1{
 	padding-left : 7em;
 	margin-bottom: 0px;
 	/*margin-bottom: 5px;*/
+    justify-content: center; /* Centre horizontalement */
+    white-space: nowrap;
 }
 
 #paragraph{
@@ -136,15 +138,22 @@ section{
 }
 
 footer {
+    width: 100%;
 	display: flex;
 	border-top: 2px solid black ;
 	margin-top: 5em;
-	/*background-color: rgba(51,58,65,.70);
-	color : rgba(255,255,255,.69);*/
+	
+	box-sizing: border-box;
+    position: relative;
+    bottom: 0;
 }
 
 #author{
-	 white-space: nowrap; /* Empêche le texte de passer à la ligne */
+	white-space: nowrap; /* Empêche le texte de passer à la ligne */
+
+	overflow: hidden;
+    text-overflow: ellipsis ; /* Ajoute "..." si le texte dépasse */
+    max-width: 100%; /* Empêche qu'il dépasse la largeur du footer */
 }
 
 footer > #mail{
@@ -157,5 +166,16 @@ footer > #mail{
 
 @media only screen and (max-width:480px), (min-width:481px) and (max-width:1024px){
 	body{
+	}
+
+	footer{
+		/*position : relative;*/
+    	width: 100%;
+    	display: flex;
+		border-top: 2px solid black ;
+		margin-top: 5em;
+   		box-sizing: border-box;
+    	position: relative;
+    	bottom: 0;
 	}
 }
