@@ -46,6 +46,7 @@ header{
 	padding-left : 50em;
 	padding-bottom: 1em;
 	padding-top: 1em;
+	display: flex;
 }
 
 
@@ -87,6 +88,10 @@ header{
 	width: 200px;
 	margin: 0 auto;
 	padding-left: 0;
+
+	flex: 1; /* Prend toute la place restante */
+    /*display: flex;*/
+    justify-content: center; /* Centre horizontalement */
 }
 
 footer{
@@ -121,7 +126,7 @@ footer > #mail{
 	}
 
 	#menu_bouton{
-		display: flex;
+		/*display: flex;*/
 	}
 
 	footer{

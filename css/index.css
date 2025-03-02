@@ -145,16 +145,13 @@ footer > #mail{
 		display: flex;
 	}
 
-	main{
-		margin-top: 5em ;
-	}
-
 	#presentation{
 		text-align : justify-all;
 		position: relative;
 	}
 
 	main{
+		margin-top: 5em ;
 		min-height: 70vh; /*occupe au moin 7O% de l'ecran*/
 		margin-bottom: 5em;
 	}
