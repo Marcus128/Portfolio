@@ -79,6 +79,7 @@ header{
 
 h1{
 	margin-left: 15em;
+	white-space: nowrap;
 }
 
 #paragraph{
