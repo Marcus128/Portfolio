@@ -46,7 +46,6 @@ header{
 	padding-left : 50em;
 	padding-bottom: 1em;
 	padding-top: 1em;
-	display: flex;
 }
 
 
@@ -126,7 +125,11 @@ footer > #mail{
 	}
 
 	#menu_bouton{
-		/*display: flex;*/
+		display: flex;
+	}
+
+	#imageCv{
+		padding-right: 5em;
 	}
 
 	footer{
