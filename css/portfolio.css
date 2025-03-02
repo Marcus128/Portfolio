@@ -78,13 +78,14 @@ header{
 }
 
 h1{
-	margin-left: 15em;
+	margin-left: 40%;
 	white-space: nowrap;
 }
 
 #paragraph{
 	padding-left : 7em;
 	margin-bottom: 0px;
+	margin-left: 50%;
 	/*margin-bottom: 5px;*/
     justify-content: center; /* Centre horizontalement */
     white-space: nowrap;
@@ -167,6 +168,11 @@ footer > #mail{
 
 @media only screen and (max-width:480px), (min-width:481px) and (max-width:1024px){
 	body{
+	}
+
+	#AllProject{
+		display: contents;
+		padding-right: 4em;
 	}
 
 	footer{
