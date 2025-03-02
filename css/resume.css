@@ -24,11 +24,12 @@ header{
 
 /*Coin haut-gauche*/
 #logoAcceuil{
-            position: fixed;
-            top: 10px; /* Distance du haut */
-            left: 10px; /* Distance de la gauche */
-            padding: 10px;
-            border-radius: 5px;
+	position: fixed;
+	top: 10px; /* Distance du haut */
+	left: 10px; /* Distance de la gauche */
+	padding: 10px;
+	border-radius: 5px;
+	z-index: 9999; /* Met les éléments au premier plan */
 }
 
 /*----Coin haut-droite----*/
@@ -89,14 +90,23 @@ header{
 }
 
 footer{
+    width: 100%;
 	display: flex;
 	border-top: 2px solid black ;
 	margin-top: 5em;
+
+	box-sizing: border-box;
+    position: relative;
+    bottom: 0;
 }
 
 #author{
-	 white-space: nowrap; /* Empêche le texte de passer à la ligne */
-	 padding-left: 1em;
+	white-space: nowrap; /* Empêche le texte de passer à la ligne */
+	padding-left: 1em;
+
+	overflow: hidden;
+    text-overflow: ellipsis ; /* Ajoute "..." si le texte dépasse */
+    max-width: 100%; /* Empêche qu'il dépasse la largeur du footer */
 }
 
 footer > #mail{
@@ -110,4 +120,18 @@ footer > #mail{
 	body{
 	}
 
+	#menu_bouton{
+		display: flex;
+	}
+
+	footer{
+		/*position : relative;*/
+    	width: 100%;
+    	display: flex;
+		border-top: 2px solid black ;
+		margin-top: 5em;
+   		box-sizing: border-box;
+    	position: relative;
+    	bottom: 0;
+	}
 }	

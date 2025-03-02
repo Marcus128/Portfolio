@@ -32,7 +32,7 @@ header{
 	padding: 10px;
 	border-radius: 5px;
 
-	 z-index: 9999; /* Met les éléments au premier plan */
+	z-index: 9999; /* Met les éléments au premier plan */
 }
 
 /*----Coin haut-droite----*/
