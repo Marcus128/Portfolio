@@ -124,6 +124,10 @@ footer > #mail{
 	body{
 	}
 
+	menu_bouton{
+		padding-left: 4em;
+	}
+
 	#imageCv{
 		padding-right: 5em;
 	}
